@@ -1,0 +1,87 @@
+.skils{
+    margin-top: 120px;
+
+    .title_fz16{
+        position: relative;
+        margin: 0 auto;
+        @include center_circle;
+    }
+    .title_center{
+        text-align: center;
+
+    }
+    .line{
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    &__wrapper{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        gap: 13px 13px;
+    }
+    &__item{
+        padding: 30px;
+        border: 2px solid black;
+    }
+    .title_fz14{
+        position: relative;
+        margin-top: 20px;
+    }
+    .title_fz12{
+        margin-top: 15px;
+    }
+    .title_mt0{
+        margin-top: 0;
+        @include before_circle;
+
+    }
+
+    &__percent{
+        position: relative;
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        column-gap: 45px;
+        row-gap: 30px;
+
+        &_item{
+            position: relative;
+        }
+        &_head{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        &_procent{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+
+        &_process{
+
+            position: absolute;
+            top: 50px;
+            left: -12px;
+            width: 365px;
+            height: 14px;
+            border-radius:4px;
+            background-color: #E8E4DE;
+
+
+        }
+        span{
+            position: absolute;
+            height: 14px;
+            border-radius:4px;
+            background-color: $main-color;
+
+        }
+    }
+
+}
